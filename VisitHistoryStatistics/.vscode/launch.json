@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/leejin/Documents/Projects/personal/idea/VisitHistoryStatistics",
+      "program": "/Users/leejin/Documents/Projects/personal/idea/VisitHistoryStatistics/build/Debug/outDebug"
+    }
+  ]
+}
