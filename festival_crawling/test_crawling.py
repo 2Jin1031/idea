@@ -10,7 +10,7 @@ url = "https://www.mcst.go.kr/kor/s_culture/festival/festivalList.jsp?pMenuCD=&p
 html_data = urlopen(url)
 
 #데이터가 잘 불러와 오는지 확인 -> sucess
-#print(html_data.read())
+print(html_data.read())
 
 ext_data = BeautifulSoup(html_data, "html.parser")
 title = ext_data.find_all("h2")
