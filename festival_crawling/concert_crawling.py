@@ -11,17 +11,19 @@ url = "https://m.place.naver.com/place/12268494/ncr/performance"
 html_data = urlopen(url)
 
 #데이터가 잘 불러와 오는지 확인 -> sucess
-print(html_data.read())
+#print(html_data.read())
+
+
+ext_data = BeautifulSoup(html_data, "html.parser")
+title = ext_data.find_all("h2")
+
+
+
+for var in title :
+   print(var.text)
+# ''
 
 '''
-ext_data = BeautifulSoup(html_data, "html.parser")
-#title = ext_data.find_all("h2")
-
-
-# ''
-#for var in title :
-#    print(var.text)
-# ''
 
 festival_info = ext_data.find_all("div", {"class":"text"})
 
