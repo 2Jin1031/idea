@@ -15,18 +15,24 @@ html_data = urlopen(url)
 
 
 ext_data = BeautifulSoup(html_data, "html.parser")
-title = ext_data.find_all("h2")
+
+## h2 형태의 title 출력해보는 코드
+#title = ext_data.find_all("h2")
+#
+#for var in title :
+#   print(var.text)
 
 
+## 데이터 가공하기
+#festival_info = ext_data.find_all("div", {"class":"text"})
+consert_info = ext_data.find_all("div", {"class":"SViKF"})
 
-for var in title :
-   print(var.text)
-# ''
+for consert in consert_info:
+    print(consert.text)
+
+
 
 '''
-
-festival_info = ext_data.find_all("div", {"class":"text"})
-
 for festival in festival_info:
     title = festival.find("p", {"class":"title"}).text
     place = festival.find("ul", {"class":"detail_info"}).text
