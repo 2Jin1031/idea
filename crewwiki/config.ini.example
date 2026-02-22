@@ -1,0 +1,7 @@
+[database]
+host = your-database-host.rds.amazonaws.com
+port = 3306
+user = your-username
+password = your-password
+database = wiki
+charset = utf8mb4

@@ -1,0 +1,5 @@
+# Configuration files with secrets
+crewwiki/config.ini
+
+# IDE
+.idea/
